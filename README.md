@@ -59,21 +59,30 @@ applies_to: все продукты в C:\src\products
 
 ## Какие продукты уже на рельсах
 
-| Продукт | Статус | Что сделать |
-|---|---|---|
-| academy | 🟡 частично | Разнести `manual-staff.md` (147 КБ) по `docs/manual/`, вытащить hero из `docs/` в `marketing/hero/`, разделить `roadmap.md` (178 КБ) |
-| amb | ⚪ не оценивался | Пройти миграцию |
-| bigart | ⚪ не оценивался | Пройти миграцию |
-| cafe | 🔴 хаос | Нет маркетинга, нет витрины, нет hero; добавить `marketing/`, `docs/manual/` |
-| gym | ⚪ не оценивался | Пройти миграцию |
-| hotel | ⚪ не оценивался | Пройти миграцию |
-| omo | ⚪ не оценивался | Пройти миграцию |
-| realty | ⚪ не оценивался | Пройти миграцию |
-| salon | ⚪ не оценивался | Пройти миграцию |
-| shop | 🟡 частично | Самый зрелый; разбить `knowledge-base.md` (148 КБ) на `docs/help/`, выделить API в `docs/api/`, разнести `arch/01-adrs.md` на `adr/` |
-| veterinary | 🔴 хаос | Нет `docs/`, справка закопана в `frontend/src/help`; полная миграция |
+Все 10 продуктов (academy, amb, bigart, cafe, gym, hotel, realty, salon, shop, veterinary) переведены на стандарт, прошли миграцию в каноническую структуру и запушены в GitHub. Провалидировано суммарно **387 файлов с frontmatter** (0 ошибок).
+
+Сводка по миграции (коммит на GitHub):
+- **shop** — `4c3766b` — 76 файлов перенесено, knowledge-base.md (149 КБ) → 8 help-статей, roadmap.md → 12 roadmap-секций.
+- **academy, amb, bigart, salon** — миграция docs/{00..25}-* и user-guide*/scenarios/ в канон.
+- **realty, cafe, hotel, gym** — нумерованные docs/00..06-* в arch/tech/api/roadmap/design/manual/.
+- **veterinary** — справка перенесена из `frontend/src/help/` в `docs/help/ru/`.
+
+`omo` в списке `C:\src\products\` отсутствует — не мигрирован (нет репо).
 
 Статусы: 🔴 не соответствует · 🟡 частично · 🟢 полностью на рельсах.
+
+| Продукт | Статус | Frontmatter-файлов | Последний коммит |
+|---|:-:|---:|---|
+| academy | 🟢 | 20 | recovery + safe frontmatter |
+| amb | 🟢 | 133 | migrate to canonical structure |
+| bigart | 🟢 | 17 | recover + safe frontmatter |
+| cafe | 🟢 | 17 | migrate to canonical structure |
+| gym | 🟢 | 15 | migrate to canonical structure |
+| hotel | 🟢 | 24 | migrate to canonical structure |
+| realty | 🟢 | 26 | migrate to canonical structure |
+| salon | 🟢 | 47 | migrate to canonical structure |
+| shop | 🟢 | 78 | migrate docs to canonical structure |
+| veterinary | 🟢 | 10 | migrate to canonical structure |
 
 ## Как применять
 
