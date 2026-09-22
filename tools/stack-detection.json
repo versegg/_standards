@@ -1,0 +1,109 @@
+﻿{
+    "veterinary":  {
+                       "Modules":  [
+                                       "backend/Veterinary",
+                                       "backend/Veterinary.Api",
+                                       "backend/Veterinary.Tests",
+                                       "frontend/src"
+                                   ],
+                       "Backend":  ".NET",
+                       "Frontend":  "no dedicated frontend"
+                   },
+    "amb":  {
+                "Modules":  [
+                                "src/backend",
+                                "src/frontend"
+                            ],
+                "Backend":  ".NET net10.0",
+                "Frontend":  "React + Vite"
+            },
+    "hotel":  {
+                  "Modules":  [
+                                  "backend/Hotel",
+                                  "backend/Hotel.Api",
+                                  "backend/Hotel.Modules.Fiscal",
+                                  "backend/Hotel.Modules.Stays",
+                                  "backend/Hotel.Tests",
+                                  "frontend/public",
+                                  "frontend/src"
+                              ],
+                  "Backend":  ".NET",
+                  "Frontend":  "no dedicated frontend"
+              },
+    "salon":  {
+                  "Modules":  [
+                                  "src/frontend",
+                                  "src/Salon.Application",
+                                  "src/Salon.Domain",
+                                  "src/Salon.Host",
+                                  "src/Salon.Infrastructure"
+                              ],
+                  "Backend":  ".NET",
+                  "Frontend":  "no dedicated frontend"
+              },
+    "gym":  {
+                "Modules":  [
+                                "src/backend",
+                                "src/frontend"
+                            ],
+                "Backend":  ".NET",
+                "Frontend":  "no dedicated frontend"
+            },
+    "academy":  {
+                    "Modules":  [
+                                    "src/backend",
+                                    "src/frontend"
+                                ],
+                    "Backend":  ".NET",
+                    "Frontend":  "no dedicated frontend"
+                },
+    "cafe":  {
+                 "Modules":  [
+                                 "frontend/public",
+                                 "frontend/src"
+                             ],
+                 "Backend":  "",
+                 "Frontend":  "no dedicated frontend"
+             },
+    "shop":  {
+                 "Modules":  [
+                                 "src/frontend",
+                                 "src/Shop.Api",
+                                 "src/Shop.Caching",
+                                 "src/Shop.Catalog",
+                                 "src/Shop.Checkout",
+                                 "src/Shop.Compliance",
+                                 "src/Shop.Content",
+                                 "src/Shop.Core",
+                                 "src/Shop.Employees",
+                                 "src/Shop.Finance",
+                                 "src/Shop.Integrations",
+                                 "src/Shop.Inventory",
+                                 "src/Shop.Jobs.Redis",
+                                 "src/Shop.Media",
+                                 "src/Shop.Orders",
+                                 "src/Shop.Payments",
+                                 "src/Shop.Persistence",
+                                 "src/Shop.Platform",
+                                 "src/Shop.Profiles",
+                                 "src/Shop.Seeder",
+                                 "src/Shop.Storefront"
+                             ],
+                 "Backend":  ".NET",
+                 "Frontend":  "Vue 3 + Vite"
+             },
+    "realty":  {
+                   "Modules":  {
+
+                               },
+                   "Backend":  "",
+                   "Frontend":  "no dedicated frontend"
+               },
+    "bigart":  {
+                   "Modules":  {
+
+                               },
+                   "Backend":  ".NET",
+                   "Frontend":  "no dedicated frontend"
+               }
+}
